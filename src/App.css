@@ -3,6 +3,10 @@ body {
   position: relative;
 }
 
+h2 span.spacer {
+  padding: 0 5px;
+}
+
 .component {
   margin-bottom: 30px;
   margin-top: 30px;
@@ -21,6 +25,12 @@ body {
   font-weight: 900;
 }
 
+.alternate-font2 {
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-size: 23px;
+}
+
 .maintxt {
   position: relative;
   font-size: 86px;
@@ -28,6 +38,11 @@ body {
 
 .maintxt>img, .overlay-text {
   position: absolute;
+}
+
+.maintxt2 {
+  position: relative;
+  font-size: 36px;
 }
 
 .overlay-text {
@@ -68,9 +83,9 @@ body {
 }
 
 .jumbotron {
-  background: url('./images/cocktail_tumbler.jpg') fixed center no-repeat;
+  background: url('./images/med_cocktail_4glasses.png') fixed center no-repeat;
   background-size: cover;
-  height: 80vh;
+  height: 60vh;
 }
 
 .center-block {

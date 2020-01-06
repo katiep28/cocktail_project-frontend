@@ -20,8 +20,9 @@ function Greet() {
         color: "#FFF",
         // backgroundColor: "#E96969",
         textAlign: "center",
-        width: 250,
+        width: 450,
         padding: 20,
+        fontsize: 10,
         borderRadius: 20,
         fontFamily: "Montserrat",
         fontcolor: "white",
@@ -45,7 +46,7 @@ function Greet() {
 
 
 
-                <h3 style={styles} >Good {timeOfDay}!</h3></a>
+                <h5 style={styles} >Good {timeOfDay}!</h5></a>
         </div>
 
     )
