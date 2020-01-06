@@ -38,6 +38,7 @@ class App extends React.Component {
 
   componentDidMount() {
     //Make async request to get data
+    console.log("in componant did mount");
     axios.get('https://ijrb29r28l.execute-api.eu-west-2.amazonaws.com/dev/getallcocktails/')
       .then((response) => {
 
