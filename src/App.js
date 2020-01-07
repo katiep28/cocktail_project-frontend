@@ -166,16 +166,18 @@ class App extends React.Component {
           </div> */}
             
       </div>
-
+{/* //Remove this section */}
+{/*
       <div className="container-fluid text-block">
 
         <span className="overlay-text maintxt2 alternate-font text-white">INSPIRE ME!</span>
         {/* <h1 className="maintxt alternate-font text-white" >DRINKS</h1> */}
-        <img className="img-responsive" src={photo6} width="1450" alt="" />
+        {/* <img className="img-responsive" src={photo6} width="1450" alt="" />
         <br />
 
-      </div>
-        
+      </div> */}
+    
+ {/* //To here        */}
         <div className="feature-wrapper bg-white pt-5 pb-5 mt-5 mt-lg-0">
           <div className="container">
             <div className="row">
