@@ -7,6 +7,18 @@ h2 span.spacer {
   padding: 0 5px;
 }
 
+h2 {
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-size: 45px;
+  font-weight: 900;
+}
+
+h5 {
+  color: #ffffff;
+  font-family: "Montserrat";
+}
+
 .component {
   margin-bottom: 30px;
   margin-top: 30px;
@@ -28,12 +40,13 @@ h2 span.spacer {
 .alternate-font2 {
   font-family: "Montserrat";
   font-weight: 300;
-  font-size: 23px;
+  font-size: 18px;
 }
 
 .maintxt {
   position: relative;
   font-size: 86px;
+  text-align: center;
 }
 
 .maintxt>img, .overlay-text {
@@ -46,12 +59,29 @@ h2 span.spacer {
 }
 
 .overlay-text {
-  padding: 150px 50px;
+  padding: 50px 50px;
+  text-align: center;
 }
 
 .feature-wrapper {
   margin: 50px;
   padding: 50px;
+  /* background-color: pink; */
+  background-color: beige;
+}
+
+.feature-wrapper2 {
+  margin: 50px;
+  padding: 50px;
+  /* background-color: pink; */
+  background-image: url('./images/dark_background_for_text.png');
+}
+
+.feature-wrapper3 {
+  margin: 50px;
+  padding: 50px;
+  /* background-color: pink; */
+  background-image: url('./images/cocktail_skulls_thin.jpg');
 }
 
 .funkybutton {
@@ -69,7 +99,7 @@ h2 span.spacer {
 .funkybutton:hover {
   /*color: #404040 !important;*/
   /*font-weight: 700 !important;*/
-  letter-spacing: 22px;
+  letter-spacing: 10px;
   /*background: none;*/
   -webkit-box-shadow: 0px 5px 40px 10px rgba(108, 170, 179, 0.61);
   -moz-box-shadow: 0px 5px 40px 10px rgba(108, 170, 179, 0.61);
@@ -85,7 +115,7 @@ h2 span.spacer {
 .jumbotron {
   background: url('./images/med_cocktail_4glasses.png') fixed center no-repeat;
   background-size: cover;
-  height: 60vh;
+  height: 40vh;
 }
 
 .center-block {
@@ -96,12 +126,15 @@ h2 span.spacer {
 
 .img-responsive {
   margin: 0 auto;
+  position: relative;
+  width: 100%;
 }
 
 .container-fluid {
   display: block;
   max-width: 100%;
   height: auto;
+  position: relative;
 }
 
 /* .brand {
