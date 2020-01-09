@@ -166,7 +166,6 @@ class App extends React.Component {
           </div> */}
             
       </div>
-<<<<<<< HEAD
 {/* //Remove this section */}
 {/*
       <div className="container-fluid text-block">
@@ -179,56 +178,6 @@ class App extends React.Component {
       </div> */}
     
  {/* //To here        */}
-=======
-
-      <div className="feature-wrapper3 bg-white pt-5 pb-5 mt-5 mt-lg-0">
-        <div className="container">
-          <div className="row">
-            <div className="col-sm-12 col-md-12 text-center mb-3 mb-md-0">
-              <i class="fas fa-cocktail fa-3x"></i>
-            </div>
-            <div className="col-sm-12 col-md-12 text-center text-md-center text-uppercase mb-3 mb-md-0">
-
-              <h2>INSPIRE ME</h2>
-            
-
-
-              {/* <p>search.</p> */}
-            </div>
-            {/* <div className="col-sm-12 col-md-1 text-center mb-3 mb-md-0">
-              <i class="fas fa-cocktail fa-3x"></i>
-            </div>
-            <div className="col-sm-12 col-md-3 text-center text-md-left text-uppercase mb-3 mb-md-0">
-              <p>search.</p>
-            </div>
-            <div className="col-sm-12 col-md-1 text-center mb-3 mb-md-0">
-              <i class="fas fa-cocktail fa-3x"></i>
-            </div>
-            <div className="col-sm-12 col-md-3 text-center text-md-left text-uppercase mb-3 mb-md-0">
-              <p>search.</p>
-            </div> */}
-          </div>
-        </div>
-      </div>
-
-
-
-      {/* <div className="container-fluid text-block">
-
-        <span className="overlay-text maintxt2 alternate-font text-blue">INSPIRE ME!
-        <h1>INSPIRE ME </h1> */}
-        {/* <h1 className="maintxt alternate-font text-white" >DRINKS</h1> */}
-        {/* <img className="img-responsive" src={photo6} width="1450" alt="" /> */}
-       
-        {/* </span> */}
-        {/* <span className="overlay-text maintxt2 alternate-font text-blue mg-responsive" src={photo6} width="1450" alt="""/> >INSPIRE ME!
-        </span> */}
-       
-        {/* <br />
-
-      </div> */}
-        
->>>>>>> dave/master
         <div className="feature-wrapper bg-white pt-5 pb-5 mt-5 mt-lg-0">
           <div className="container">
             <div className="row">
@@ -348,7 +297,7 @@ class App extends React.Component {
             <div className="col-sm-12 col-md-12 text-center text-md-center text-uppercase mb-3 mb-md-0">
              
               <h2>TO MAKE A: {this.state.cocktailName}</h2>
-              <h5>{this.state.cocktailRecipe}</h5>
+              <h3>{this.state.cocktailRecipe}</h3>
              
              
               {/* <p>search.</p> */}

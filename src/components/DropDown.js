@@ -69,13 +69,9 @@ class Dropdown extends React.Component {
                             {this.props.label}
                         </div>
                         <select name={this.props.label} id="dropdown" onChange={this.handleDropdownChange}>
-<<<<<<< HEAD
-                            <option> Inspire Me</option>
-=======
                             <option>
                                 INSPIRE ME
                             </option>
->>>>>>> dave/master
                             {this.props.cocktailArray.map(item => {
                                 return <option key={item.id} value={item.name}> {item.name} </option>
                             })}
