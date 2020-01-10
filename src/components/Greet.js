@@ -45,8 +45,6 @@ function Greet() {
         <div className="row ToDoRow top-buffer d-flex justify-content-center">
             <a className="funkybutton">
 
-
-
                 <h5 style={styles} >Good {timeOfDay}!</h5></a>
         </div>
 

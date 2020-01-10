@@ -66,6 +66,10 @@ class SearchByDrink extends React.Component {
         return (
             <section>
                 <div className="row">
+                <div className="col-1 col-lg-1">
+
+                                    <i class="fas fa-cocktail fa-3x"></i>
+                    </div>
                     <div className="col-4 col-lg-4">
                         <input
                             id="drink1Input"
@@ -84,7 +88,7 @@ class SearchByDrink extends React.Component {
                             value={this.state.newDrink2}
                             onChange={this.updateDrink2} />
                     </div>
-                    <div className="col-4 col-lg-4">
+                    <div className="col-3 col-lg-3">
                         <input
                             id="drink3Input"
                             type="text"

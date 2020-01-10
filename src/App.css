@@ -25,12 +25,6 @@ h5 {
   justify-content: center;
 }
 
-/* h1 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 85px;
-  color: rgb(145, 19, 61);
-  font-display: 23;
-} */
 
 .alternate-font {
   font-family: "Montserrat";
@@ -64,24 +58,22 @@ h5 {
 }
 
 .feature-wrapper {
-  margin: 50px;
-  padding: 50px;
-  /* background-color: pink; */
+  margin: 20px;
+  padding: 10px;
   background-color: beige;
 }
 
 .feature-wrapper2 {
-  margin: 50px;
+  margin: 20px;
   padding: 50px;
-  /* background-color: pink; */
   background-image: url('./images/dark_background_for_text.png');
 }
 
 .feature-wrapper3 {
   margin: 50px;
   padding: 50px;
-  /* background-color: pink; */
   background-image: url('./images/cocktail_skulls_thin.jpg');
+  height: 30vh;
 }
 
 .funkybutton {
@@ -115,7 +107,7 @@ h5 {
 .jumbotron {
   background: url('./images/med_cocktail_4glasses.png') fixed center no-repeat;
   background-size: cover;
-  height: 40vh;
+  height: 30vh;
 }
 
 .center-block {
@@ -136,34 +128,6 @@ h5 {
   height: auto;
   position: relative;
 }
-
-/* .brand {
-  position: absolute;
-  left: 50%;
-  margin-left: -50px; */
-
-/* 50% of your logo width */
-
-/* display: block;
-} */
-
-/* header {
-  background-color: rgb(204, 157, 37);
-  margin-top: auto;
-  margin-bottom: 2.5rem;
-  padding-bottom: 10px;
-} */
-
-/* footer {
-  background-color: rgb(155, 27, 134);
-  margin-top: 50px;
-  font-size: 12px;
-  height: 10px;
-  width: 70%;
-  position: absolute;
-  bottom: 0;
-  border-top: 81px solid #aaa;
-} */
 
 /* CSS from REACT IMPORT BELOW */
 

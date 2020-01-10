@@ -1,4 +1,6 @@
 import React from 'react';
+
+import DisplayPopup from './DisplayPopup';
 // import "./SearchResults.css";
 
 
@@ -53,6 +55,7 @@ class SearchResults extends React.Component {
                                 return <option key={item.id} value={item.name}> {item.name} </option>
                             })}
                         </select>
+               
                     </div>
 
                 </div>
