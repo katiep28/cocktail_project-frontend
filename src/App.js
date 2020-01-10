@@ -163,17 +163,7 @@ class App extends React.Component {
         <div className="container-fluid text-block">
 
           <span className="overlay-text maintxt2 alternate-font text-blue">WHAT WOULD YOU LIKE?</span>
-          {/* <div className="col-sm-12 col-md-3 text-center text-md-left text-uppercase mb-3 mb-md-0"> */}
 
-<DropDown
-  cocktailArray={alcoholicCocktails}
-  label="Alcoholic" style={{ width: "160px" }}
-  showRecipeFunc={this.showRecipe}
-  key="2"
-
-/>
-{/* <p>search.</p> */}
-{/* </div> */}
           <br />
 
         </div>
@@ -185,20 +175,15 @@ class App extends React.Component {
               <div className="col-sm-12 col-md-1 text-center mb-3 mb-md-0">
                 <i class="fas fa-cocktail fa-3x"></i>
               </div>
-              <div className="col-sm-12 col-md-3 text-center text-md-left text-uppercase mb-3 mb-md-0">
-                <div className="row">
+              <div className="col-sm-12 col-md-5 text-center text-md-left text-uppercase mb-3 mb-md-0">
+                {/* <div className="row"> */}
                   <SearchCocktailByName
                     searchCocktailFunc={this.searchCocktailByName}
                     showRecipeFunc={this.showRecipe}
                     key="0" />
 
-                </div>
+              </div>
 
-                {/* <p>search.</p> */}
-              </div>
-              <div className="col-sm-12 col-md-1 text-center mb-3 mb-md-0">
-                {/* <i class="fas fa-cocktail fa-3x"></i> */}
-              </div>
               <div className="col-sm-12 col-md-3 text-center text-md-left text-uppercase mb-3 mb-md-0">
 
                 <DropDown
@@ -206,13 +191,10 @@ class App extends React.Component {
                   label="Alcoholic" style={{ width: "160px" }}
                   showRecipeFunc={this.showRecipe}
                   key="2"
-
                 />
-                {/* <p>search.</p> */}
+          
               </div>
-              <div className="col-sm-12 col-md-1 text-center mb-3 mb-md-0">
-                {/* <i class="fas fa-cocktail fa-3x"></i>               */}
-              </div>
+
               <div className="col-sm-12 col-md-3 text-center text-md-left text-uppercase mb-3 mb-md-0">
 
                 <DropDown
@@ -220,11 +202,9 @@ class App extends React.Component {
                   label="Non-Alcoholic" style={{ width: "160px" }}
                   showRecipeFunc={this.showRecipe}
                   key="3"
-
                 />
-
-                {/* <p>search.</p> */}
               </div>
+
             </div>
           </div>
         </div>

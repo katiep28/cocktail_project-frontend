@@ -19,8 +19,9 @@ class SearchCocktailByName extends React.Component {
     }
     render() {
         return (
-            <div className="row">
-                <div className="col-8 col-md-12" >
+            <div> 
+            {/* <div className="row"> */}
+                <div className="col-8 col-md-8" >
                     <input
                         id="input-group"
                         type="text"
@@ -30,15 +31,16 @@ class SearchCocktailByName extends React.Component {
                         onChange={this.updateName} />
                 </div>
 
-                <div className="col-4 col-md-12">
+                <div className="col-4 col-md-4">
                     <button type="button"
                         style={{ height: "40px" }}
                         className="btn btn-success"
                         onClick={this.getCocktail}>
                         Search
-           </button>
+                    </button>
                 </div>
-            </div>
+            {/* </div> */}
+        </div>
         );
     }
 }

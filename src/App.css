@@ -58,22 +58,22 @@ h5 {
 }
 
 .feature-wrapper {
-  margin: 20px;
-  padding: 10px;
+  margin: 10px;
+  padding: 1px;
   background-color: beige;
 }
 
 .feature-wrapper2 {
-  margin: 20px;
-  padding: 50px;
+  margin: 10px;
+  padding: 10px;
   background-image: url('./images/dark_background_for_text.png');
 }
 
 .feature-wrapper3 {
-  margin: 50px;
-  padding: 50px;
+  margin: 10px;
+  padding: 10px;
   background-image: url('./images/cocktail_skulls_thin.jpg');
-  height: 30vh;
+  height: 10vh;
 }
 
 .funkybutton {
@@ -83,7 +83,7 @@ h5 {
   /*font-weight: 100;*/
   /*padding: 20px;*/
   text-transform: uppercase;
-  border-radius: 20px;
+  border-radius: 10px;
   /*display: inline-block;*/
   transition: all 0.3s ease 0s;
 }
@@ -103,7 +103,7 @@ h5 {
   text-decoration: line-through;
   color: gray;
 }
-
+/* Heading banner */
 .jumbotron {
   background: url('./images/med_cocktail_4glasses.png') fixed center no-repeat;
   background-size: cover;
