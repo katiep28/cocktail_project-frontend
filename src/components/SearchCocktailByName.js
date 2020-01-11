@@ -22,7 +22,7 @@ class SearchCocktailByName extends React.Component {
         return (
             <div> 
             {/* <div className="row"> */}
-                    <div className="col-1 col-md-2">
+                    <div className="d-none d-md-block col-0 col-md-2">
                         <i class="fas fa-cocktail fa-3x"></i>
                     </div>
                 <div className="col-8 col-md-5" >

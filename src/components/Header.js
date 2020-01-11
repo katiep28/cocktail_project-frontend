@@ -8,14 +8,13 @@ import Greet from './Greet.js';
 class Header extends React.Component {
     render() {
         return (
-            // 
-            // < !--NAVBAR-- >
+           
             <nav className="navbar navbar-custom navbar-expand-lg py-3 navbar-dark bg-dark shadow-sm">
                 <div className="container-fluid">
                     <a href="#" className="navbar-brand navbar-custom navbar-text" alt="Responsive image">
-                        {/* <!-- Logo Image --> */}
+                       
                         <img src={logo} width="150" alt="" className="d-inline-block align-middle mr-2" fluid />
-                        {/* <!-- Logo Text --> */}
+                        
                     </a>
 
                     <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" className="navbar-toggler"><span className="navbar-toggler-icon"></span></button>
@@ -28,14 +27,11 @@ class Header extends React.Component {
                         </ul>
                     </div>
                 </div>
-                <Greet /> 
+                {/* <Greet />  */}
             </nav>
         );
     }
 }
-
-
-
 
 export default Header;
 

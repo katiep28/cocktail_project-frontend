@@ -66,11 +66,10 @@ class SearchByDrink extends React.Component {
     render() {
         return (
             <section>
-                {/* <div className="row"> */}
-                    <div className="col-1 col-lg-1">
+                    <div className="col-lg-1 d-none d-sm-block">
                         <i class="fas fa-cocktail fa-3x"></i>
                     </div>
-                    <div className="col-4 col-lg-4">
+                    <div className="col-12 col-lg-3">
                         <input
                             id="drink1Input"
                             type="text"
@@ -79,7 +78,7 @@ class SearchByDrink extends React.Component {
                             value={this.state.newDrink1}
                             onChange={this.updateDrink1} />
                     </div>
-                    <div className="col-4 col-lg-4">
+                    <div className="col-12 col-lg-3">
                         <input
                             id="drink2Input"
                             type="text"
@@ -88,7 +87,7 @@ class SearchByDrink extends React.Component {
                             value={this.state.newDrink2}
                             onChange={this.updateDrink2} />
                     </div>
-                    <div className="col-3 col-lg-3">
+                    <div className="col-12 col-lg-3">
                         <input
                             id="drink3Input"
                             type="text"
@@ -97,23 +96,16 @@ class SearchByDrink extends React.Component {
                             value={this.state.newDrink3}
                             onChange={this.updateDrink3} />
                     </div>
-                {/* </div> */}
-
-
-                <div className="row" >
-                    <div className="col-4 col-lg-5" />
-                    <div className="col-4 col-lg-4">
+                
+                {/* <div className="row" > */}
+                    {/* <div className="col-4 col-lg-5" /> */}
+                    <div className="col-12 col-lg-2">
                         <button className="btn btn-success"
                             onClick={this.handleClick}>Search
-                    </button>
+                        </button>
                     </div>
-                    {/* <div className="col-4 col-lg-3" /> */}
-
-
-
-
-                    
-                </div>
+                
+                {/* </div> */}
             </section>
         );
     };

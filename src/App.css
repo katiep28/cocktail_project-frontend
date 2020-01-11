@@ -110,7 +110,7 @@ h5 {
 .jumbotron {
   background: url('./images/med_cocktail_4glasses.png') fixed center no-repeat;
   background-size: cover;
-  height: 30vh;
+  height: 25vh;
 }
 
 .center-block {
@@ -135,6 +135,7 @@ h5 {
   display: block;
   max-width: 100%;
   height: auto;
+  /* height: 30px; */
   position: relative;
 }
 

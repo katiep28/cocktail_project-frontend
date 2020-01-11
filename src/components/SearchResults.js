@@ -45,23 +45,25 @@ class SearchResults extends React.Component {
 
     render() {
         return (
-            <div>
-                <div>
-                    <div>
-                        <div className="button" onClick={this.showDropdownMenu} >
-                            {this.props.label} </div>
-                        <select name={this.props.label} id="dropdown" onChange={this.handleDropdownChange}>
-                            {this.props.cocktailArray.map(item => {
-                                return <option key={item.id} value={item.name}> {item.name} </option>
-                            })}
-                        </select>
-               
-                    </div>
+            <section>
+                <div className="col-sm-12 col-lg-6 text-center text-md-left text-uppercase mb-3 mb-md-0"></div>
+                {/* <div className="button"
+                    onClick={this.showDropdownMenu} >
+                    {this.props.label}
+                </div> */}
+                
 
-                </div>
-            </div>
-
-
+                <div className="col-sm-12 col-lg-6 text-center text-md-left text-uppercase mb-3 mb-md-0"></div>
+                <select name={this.props.label}
+                    id="dropdown"
+                    onChange={this.handleDropdownChange}>
+                        <option> Click to See Cocktails</option>
+                    {this.props.cocktailArray.map(item => {
+                        return <option key={item.id} value={item.name}> {item.name} </option>
+                    })}
+                </select>
+                
+            </section>
         );
     }
 }

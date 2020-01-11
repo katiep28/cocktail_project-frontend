@@ -151,35 +151,23 @@ class App extends React.Component {
 
     return (
       <Fragment>
-
         <div className="jumbotron">
-
           <div className="container-bg-sm" >
             <Header />
-            {/* <Greet />  */}
-
           </div>
-
           <Footer />
-
         </div>
-        {/* //Remove this section */}
 
         <div className="container-fluid text-block">
-
           <span className="overlay-text maintxt2 alternate-font text-blue">WHAT WOULD YOU LIKE?</span>
-
           <br />
-
-        </div>
+       </div>
 
      
         <div className="feature-wrapper bg-white pt-5 pb-5 mt-5 mt-lg-0">
           <div className="container">
             <div className="row">
-              {/* <div className="col-sm-12 col-md-1 text-center mb-3 mb-md-0">
-                <i class="fas fa-cocktail fa-3x"></i>
-              </div> */}
+
               <div className="col-sm-12 col-md-5 text-center text-md-left text-uppercase mb-3 mb-md-0">
                 {/* <div className="row"> */}
                 <SearchCocktailByName
@@ -230,14 +218,16 @@ class App extends React.Component {
           <div className="container">
             <div className="row">
               <span>
-              <div className="col-sm-12 col-md-12 text-center text-md-left text-uppercase mb-3 mb-md-0">
+            <section>
+              <div className="col-sm-12 col-lg-12 text-center text-md-left text-uppercase mb-3 mb-md-0">
 
                 <SearchByDrink
                   searchCocktailByDrinkFunc={this.searchCocktailByDrink}
                   key="3" />
               </div>
-
-              <div className="col-sm-12 col-md-3 text-center text-md-left text-uppercase mb-3 mb-md-0">
+              <div className="row">
+              <div className="col-sm-1 col-lg-6 ">
+              <div className="col-sm-12 col-lg-6" align="center">
                 <SearchResults
                   cocktailArray={this.state.cocktailByDrink}
                   label="Click to see Cocktails"
@@ -245,6 +235,9 @@ class App extends React.Component {
                   key="4"
                 />
               </div>
+              </div>
+              </div>
+              </section>
               </span>
             </div>
           </div>
