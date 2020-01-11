@@ -59,11 +59,9 @@ class Dropdown extends React.Component {
     render() {
         return (
 
-            <div>
-                <div>
+            // <div>
+            //     <div>
                     <div>
-
-
                         <div className="button"
                             onClick={this.showDropdownMenu} >
                             {this.props.label}
@@ -77,8 +75,8 @@ class Dropdown extends React.Component {
                             })}
                         </select>
                     </div>
-                </div>
-            </div>
+            //     </div>
+            // </div>
 
 
 

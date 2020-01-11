@@ -1,4 +1,5 @@
 import React from 'react';
+import "./SearchCocktailByName";
 // import { findAllInRenderedTree } from 'react-dom/test-utils';
 
 class SearchCocktailByName extends React.Component {
@@ -21,7 +22,10 @@ class SearchCocktailByName extends React.Component {
         return (
             <div> 
             {/* <div className="row"> */}
-                <div className="col-8 col-md-8" >
+                    <div className="col-1 col-md-2">
+                        <i class="fas fa-cocktail fa-3x"></i>
+                    </div>
+                <div className="col-8 col-md-5" >
                     <input
                         id="input-group"
                         type="text"

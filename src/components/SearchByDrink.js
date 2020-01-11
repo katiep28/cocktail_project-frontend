@@ -1,4 +1,5 @@
 import React from "react";
+import "./SearchByDrink.css";
 
 class SearchByDrink extends React.Component {
     state = {
@@ -65,10 +66,9 @@ class SearchByDrink extends React.Component {
     render() {
         return (
             <section>
-                <div className="row">
-                <div className="col-1 col-lg-1">
-
-                                    <i class="fas fa-cocktail fa-3x"></i>
+                {/* <div className="row"> */}
+                    <div className="col-1 col-lg-1">
+                        <i class="fas fa-cocktail fa-3x"></i>
                     </div>
                     <div className="col-4 col-lg-4">
                         <input
@@ -97,17 +97,22 @@ class SearchByDrink extends React.Component {
                             value={this.state.newDrink3}
                             onChange={this.updateDrink3} />
                     </div>
-                </div>
+                {/* </div> */}
 
 
                 <div className="row" >
-                    <div className="col-4 col-lg-4" />
+                    <div className="col-4 col-lg-5" />
                     <div className="col-4 col-lg-4">
                         <button className="btn btn-success"
                             onClick={this.handleClick}>Search
                     </button>
                     </div>
-                    <div className="col-4 col-lg-4" />
+                    {/* <div className="col-4 col-lg-3" /> */}
+
+
+
+
+                    
                 </div>
             </section>
         );

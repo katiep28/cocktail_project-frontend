@@ -145,7 +145,7 @@ class App extends React.Component {
   }
 
   render() {
-   
+
     const alcoholicCocktails = this.state.cocktailList.filter(item => item.alcoholic);
     const nonAlcoholicCocktails = this.state.cocktailList.filter(item => !item.alcoholic);
 
@@ -173,19 +173,19 @@ class App extends React.Component {
 
         </div>
 
-        {/* //To here        */}
+     
         <div className="feature-wrapper bg-white pt-5 pb-5 mt-5 mt-lg-0">
           <div className="container">
             <div className="row">
-              <div className="col-sm-12 col-md-1 text-center mb-3 mb-md-0">
+              {/* <div className="col-sm-12 col-md-1 text-center mb-3 mb-md-0">
                 <i class="fas fa-cocktail fa-3x"></i>
-              </div>
+              </div> */}
               <div className="col-sm-12 col-md-5 text-center text-md-left text-uppercase mb-3 mb-md-0">
                 {/* <div className="row"> */}
-                  <SearchCocktailByName
-                    searchCocktailFunc={this.searchCocktailByName}
-                    showRecipeFunc={this.showRecipe}
-                    key="0" />
+                <SearchCocktailByName
+                  searchCocktailFunc={this.searchCocktailByName}
+                  showRecipeFunc={this.showRecipe}
+                  key="0" />
 
               </div>
 
@@ -197,7 +197,7 @@ class App extends React.Component {
                   showRecipeFunc={this.showRecipe}
                   key="2"
                 />
-          
+
               </div>
 
               <div className="col-sm-12 col-md-3 text-center text-md-left text-uppercase mb-3 mb-md-0">
@@ -216,90 +216,55 @@ class App extends React.Component {
 
 
         <div className="container-fluid text-block">
-          <img className="img-responsive" src={photo7} width="1450" alt="" />
+          <img className="img-responsive1" src={photo7} width="1450" alt="" />
           <br />
         </div>
 
         <div className="container-fluid text-block">
-          <span className="overlay-text maintxt2 alternate-font text-blue">MAKE ME ONE!</span>
+          <span className="overlay-text maintxt2 alternate-font text-blue" >MAKE ME ONE!</span>
           <br />
         </div>
+
 
         <div className="feature-wrapper bg-white pt-5 pb-5 mt-5 mt-lg-0">
           <div className="container">
             <div className="row">
-              <div className="col-sm-12 col-md-12 text-center mb-3 mb-md-0">
-                {/* <i class="fas fa-cocktail fa-3x"></i> */}
-              </div>
-
+              <span>
               <div className="col-sm-12 col-md-12 text-center text-md-left text-uppercase mb-3 mb-md-0">
 
                 <SearchByDrink
                   searchCocktailByDrinkFunc={this.searchCocktailByDrink}
                   key="3" />
+              </div>
 
-                {/* <p>search.</p> */}
-              </div>
-              {/* <div className="col-sm-12 col-md-1 text-center mb-3 mb-md-0">
-              <i class="fas fa-cocktail fa-3x"></i>
-            </div>
-            <div className="col-sm-12 col-md-3 text-center text-md-left text-uppercase mb-3 mb-md-0">
-              <p>search.</p>
-            </div> */}
-              <div className="col-sm-12 col-md-1 text-center mb-3 mb-md-0">
-                {/* <i class="fas fa-cocktail fa-3x"></i> */}
-              </div>
               <div className="col-sm-12 col-md-3 text-center text-md-left text-uppercase mb-3 mb-md-0">
-
                 <SearchResults
                   cocktailArray={this.state.cocktailByDrink}
                   label="Click to see Cocktails"
                   showRecipeFunc={this.showRecipe}
                   key="4"
                 />
-                {/* <DisplayPopup
-                   cocktailName={this.state.cocktailName}
-                  recipe={this.state.cocktailRecipe}
-                  key="7"
-                /> */}
-                {/* <p>search.</p> */}
               </div>
+              </span>
             </div>
           </div>
         </div>
 
-        <div className="feature-wrapper2 bg-white pt-5 pb-5 mt-5 mt-lg-0">
-          <div className="container">
-            <div className="row">
-              <div className="col-sm-12 col-md-1 text-center mb-3 mb-md-0">
-                <i class="fas fa-cocktail fa-3x"></i>
-              </div>
-              <div className="col-sm-12 col-md-12 text-center text-md-center text-uppercase mb-3 mb-md-0">
+        <div className="col-sm-12 col-md-12 text-center text-md-center text-uppercase mb-3 mb-md-0">
 
-                <DisplayPopup
-                   cocktailName={this.state.cocktailName}
-                  recipe={this.state.cocktailRecipe}
-                  display={this.state.display}
-                  resetVariablesFunc={this.resetVariables}
-                  key="7"
-                />
-                {/* <p>search.</p> */}
-              </div>
+          <DisplayPopup
+            cocktailName={this.state.cocktailName}
+            recipe={this.state.cocktailRecipe}
+            display={this.state.display}
+            resetVariablesFunc={this.resetVariables}
+            key="7"
+          />
 
-            </div>
-          </div>
         </div>
-
 
         <div className="container-fluid">
-          <span className="overlay-text maintxt alternate-font text-white">SEARCH</span>
-
           <img img className="img-responsive" src={photo2} width="1450" alt="" />
-
         </div>
-
-        {/* <Hero /> */}
-
       </Fragment>
     );
   }
