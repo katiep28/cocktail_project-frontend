@@ -62,10 +62,13 @@ h5 {
   padding: 1px;
   background-color: beige;
 }
-
+/* For Pop Up */
 .feature-wrapper2 {
-  margin: 10px;
+  /* margin: 1px; */
   padding: 10px;
+  position: relative;
+  height: 400px;
+  width: 900px;
   background-image: url('./images/dark_background_for_text.png');
 }
 
@@ -172,4 +175,17 @@ h5 {
 
 h3 {
   color: white
+}
+/* colour for the cocktail glass icon */
+i.fas {
+  color: black;
+}
+
+/* Settings for the link on the popup */
+a:link {
+  color:white;
+}
+a:visited {
+  text-decoration: underline;
+  color: white;
 }

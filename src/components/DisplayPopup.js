@@ -1,5 +1,6 @@
 import React from 'react';
 import Modal from 'react-awesome-modal';
+import './DisplayPopup.css';
 
 
 class DisplayPopup extends React.Component {
@@ -7,7 +8,7 @@ class DisplayPopup extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            
+
         }
     }
 
@@ -15,14 +16,16 @@ class DisplayPopup extends React.Component {
         this.props.resetVariablesFunc();
     }
 
-    render() {      
+    render() {
         return (
             <section>
-                <Modal visible={this.props.display} width="400" height="300" effect="fadeInUp" onClickAway={() => this.closeModal()}>
-                <div>
-                        <h1>To Make a: {this.props.cocktailName}</h1>
-                        <p>{this.props.recipe}</p>
-                        <a href="javascript:void(0);" onClick={() => this.closeModal()}>Close</a>
+                <Modal visible={this.props.display} width="900px" height="400px" effect="fadeInUp" onClickAway={() => this.closeModal()}>
+                    {/* <div className="feature-wrapper2 bg-white pt-5 pb-5 mt-5 mt-lg-0"> */}
+                    <div className="feature-wrapper2 bg-white">
+                        <i className="fas fa-cocktail fa-3x"></i>
+                        <h2>Recipe For: {this.props.cocktailName}</h2>
+                        <h3>{this.props.recipe}</h3>
+                            <a href="javascript:void(0);" onClick={() => this.closeModal()}>Close</a>
                     </div>
                 </Modal>
             </section>

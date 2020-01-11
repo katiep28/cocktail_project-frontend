@@ -276,8 +276,6 @@ class App extends React.Component {
               </div>
               <div className="col-sm-12 col-md-12 text-center text-md-center text-uppercase mb-3 mb-md-0">
 
-                <h2>TO MAKE A: {this.state.cocktailName}</h2>
-                <h3>{this.state.cocktailRecipe}</h3>
                 <DisplayPopup
                    cocktailName={this.state.cocktailName}
                   recipe={this.state.cocktailRecipe}
@@ -296,7 +294,7 @@ class App extends React.Component {
         <div className="container-fluid">
           <span className="overlay-text maintxt alternate-font text-white">SEARCH</span>
 
-          <img img class="img-responsive" src={photo2} width="1450" alt="" />
+          <img img className="img-responsive" src={photo2} width="1450" alt="" />
 
         </div>
 
