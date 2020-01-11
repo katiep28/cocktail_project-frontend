@@ -1,12 +1,15 @@
 import React, { Component, Fragment } from 'react';
-import logo from './images/cocktail_summer.jpg';
-import photo from './images/cocktail_trio.jpg';
 import photo2 from './images/cocktail_skulls.jpg';
-import photo3 from './images/cocktail_4glasses.jpg';
-import photo4 from './images/cocktail_summer.jpg';
-import photo5 from './images/dark_background_for_text.png';
-import photo6 from './images/cocktail_skulls_thin.jpg';
 import photo7 from './images/cocktail_trio_thin.jpg';
+
+// import logo from './images/cocktail_summer.jpg';
+// import photo from './images/cocktail_trio.jpg';
+
+// import photo3 from './images/cocktail_4glasses.jpg';
+// import photo4 from './images/cocktail_summer.jpg';
+// import photo5 from './images/dark_background_for_text.png';
+// import photo6 from './images/cocktail_skulls_thin.jpg';
+
 
 import SearchCocktailByName from './components/SearchCocktailByName';
 import DropDown from './components/DropDown';
@@ -15,21 +18,18 @@ import SearchResults from './components/SearchResults';
 import DisplayPopup from './components/DisplayPopup';
 
 import Header from "./components/Header";
-import HideableText from "./components/HideableText";
 import Footer from "./components/Footer";
-import Greet from "./components/Greet";
-// import Hero from './components/Hero';
-import { Navbar, Jumbotron, Button } from 'react-bootstrap';
 
-/*import logo from './logo.svg';*/
 import './App.css';
 
+// import HideableText from "./components/HideableText";
+
+// import Hero from './components/Hero';
+// import { Navbar, Jumbotron, Button } from 'react-bootstrap';
+
+/*import logo from './logo.svg';*/
+
 const axios = require('axios');
-
-
-
-
-
 
 class App extends React.Component {
 
@@ -113,6 +113,7 @@ class App extends React.Component {
         console.log(error);
       })
   }
+
   showRecipe = (cocktailName, recipe) => {
     console.log("IN REcipe");
     let tempRecipe = "";
@@ -135,7 +136,13 @@ class App extends React.Component {
     recipe = "";
   }
 
-
+  resetVariables = () => {
+    this.setState({
+      cocktailRecipe: "",
+      cocktailName: "",
+      display: false
+    })
+  }
 
   render() {
    
@@ -153,9 +160,7 @@ class App extends React.Component {
 
           </div>
 
-
           <Footer />
-
 
         </div>
         {/* //Remove this section */}
@@ -277,6 +282,7 @@ class App extends React.Component {
                    cocktailName={this.state.cocktailName}
                   recipe={this.state.cocktailRecipe}
                   display={this.state.display}
+                  resetVariablesFunc={this.resetVariables}
                   key="7"
                 />
                 {/* <p>search.</p> */}
