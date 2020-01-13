@@ -1,5 +1,4 @@
 import React from "react";
-import "./SearchByDrink.css";
 
 class SearchByDrink extends React.Component {
     state = {
@@ -9,6 +8,11 @@ class SearchByDrink extends React.Component {
 
     }
 
+    handleKeyPress = (e) => {
+        if (e.key === 'Enter') {
+          this.handleClick();
+        }
+      }
     updateDrink1 = (event) => {
         this.setState({
             newDrink1: event.target.value
@@ -50,7 +54,7 @@ class SearchByDrink extends React.Component {
             tempDrink3 = "empty"
         }
         else {
-            tempDrink3 = this.state.newDrink2.toLowerCase();
+            tempDrink3 = this.state.newDrink3.toLowerCase();
         }
 
         this.props.searchCocktailByDrinkFunc(tempDrink1, tempDrink2, tempDrink3)
@@ -65,48 +69,50 @@ class SearchByDrink extends React.Component {
 
     render() {
         return (
-            <section>
+        
+            <div>
                     <div className="col-lg-1 d-none d-sm-block">
-                        <i class="fas fa-cocktail fa-3x"></i>
+                        <i className="fas fa-cocktail fa-3x"></i>
                     </div>
-                    <div className="col-12 col-lg-3">
+                    <div className="col-12 col-lg-2">
                         <input
                             id="drink1Input"
                             type="text"
                             className="form-control"
                             placeholder="Drink 1"
+                            onKeyPress={this.handleKeyPress}
                             value={this.state.newDrink1}
                             onChange={this.updateDrink1} />
                     </div>
-                    <div className="col-12 col-lg-3">
+                    <div className="col-12 col-lg-2">
                         <input
                             id="drink2Input"
                             type="text"
                             className="form-control"
                             placeholder="Drink 2"
+                            onKeyPress={this.handleKeyPress}
                             value={this.state.newDrink2}
                             onChange={this.updateDrink2} />
                     </div>
-                    <div className="col-12 col-lg-3">
+                    <div className="col-12 col-lg-2">
                         <input
                             id="drink3Input"
                             type="text"
                             className="form-control"
                             placeholder="Drink 3"
+                            onKeyPress={this.handleKeyPress}
                             value={this.state.newDrink3}
                             onChange={this.updateDrink3} />
                     </div>
+
                 
-                {/* <div className="row" > */}
-                    {/* <div className="col-4 col-lg-5" /> */}
                     <div className="col-12 col-lg-2">
                         <button className="btn btn-success"
                             onClick={this.handleClick}>Search
                         </button>
                     </div>
                 
-                {/* </div> */}
-            </section>
+                </div>
         );
     };
 }

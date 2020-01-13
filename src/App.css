@@ -64,7 +64,6 @@ h5 {
 }
 /* For Pop Up */
 .feature-wrapper2 {
-  /* margin: 1px; */
   padding: 10px;
   position: relative;
   height: 400px;
@@ -76,7 +75,8 @@ h5 {
   margin: 10px;
   padding: 10px;
   background-image: url('./images/cocktail_skulls_thin.jpg');
-  height: 10vh;
+  /* height: 10vh; */
+  height: 10px;
 }
 
 .funkybutton {
@@ -183,16 +183,4 @@ h5 {
 h3 {
   color: white
 }
-/* colour for the cocktail glass icon */
-/* i.fas {
-  color: white;
-} */
 
-/* Settings for the link on the popup */
-/* a:link {
-  color:white;
-}
-a:visited {
-  text-decoration: underline;
-  color: white;
-} */

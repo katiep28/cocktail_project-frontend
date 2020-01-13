@@ -1,13 +1,18 @@
 import React from 'react';
-import "./SearchCocktailByName";
-// import { findAllInRenderedTree } from 'react-dom/test-utils';
 
 class SearchCocktailByName extends React.Component {
     state = {
         drinkName: ""
     }
 
+    handleKeyPress = (e) => {
+
+        if (e.key === 'Enter') {
+          this.getCocktail(e);
+        }
+      }
     getCocktail = (event) => {
+
         if (this.state.drinkName === "") {
             alert("ERROR: You must enter a cocktail name to search on");
         }
@@ -23,7 +28,7 @@ class SearchCocktailByName extends React.Component {
             <div> 
             {/* <div className="row"> */}
                     <div className="d-none d-md-block col-0 col-md-2">
-                        <i class="fas fa-cocktail fa-3x"></i>
+                        <i className="fas fa-cocktail fa-3x"></i>
                     </div>
                 <div className="col-8 col-md-5" >
                     <input
@@ -31,6 +36,7 @@ class SearchCocktailByName extends React.Component {
                         type="text"
                         className="form-control form-control-lg"
                         placeholder="Search Cocktail..." style={{ height: "40px" }}
+                        onKeyPress={this.handleKeyPress}
                         value={this.state.drinkName}
                         onChange={this.updateName} />
                 </div>

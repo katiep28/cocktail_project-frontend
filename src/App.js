@@ -1,15 +1,7 @@
 import React, { Component, Fragment } from 'react';
-import photo2 from './images/cocktail_skulls.jpg';
+// import photo2 from './images/cocktail_skulls.jpg';
+import photo2 from './images/cocktail_skulls_thin.jpg';
 import photo7 from './images/cocktail_trio_thin.jpg';
-
-// import logo from './images/cocktail_summer.jpg';
-// import photo from './images/cocktail_trio.jpg';
-
-// import photo3 from './images/cocktail_4glasses.jpg';
-// import photo4 from './images/cocktail_summer.jpg';
-// import photo5 from './images/dark_background_for_text.png';
-// import photo6 from './images/cocktail_skulls_thin.jpg';
-
 
 import SearchCocktailByName from './components/SearchCocktailByName';
 import DropDown from './components/DropDown';
@@ -39,6 +31,7 @@ class App extends React.Component {
     cocktailByDrink: [],
     cocktailRecipe: "",
     cocktailName: "",
+    cocktalImage:"",
     display: false
   }
 
@@ -115,22 +108,24 @@ class App extends React.Component {
   }
 
   showRecipe = (cocktailName, recipe) => {
-    console.log("IN REcipe");
     let tempRecipe = "";
+    let tempImage = "";
 
-    if (recipe !== "") {
-      tempRecipe = recipe;
-    }
-    else {
+    // if (recipe !== "") {
+    //   tempRecipe = recipe;
+    // }
+    // else {
       tempRecipe = this.state.cocktailList.map(item => {
         if (item.name === cocktailName) {
+          tempImage = item.thumbnail;
           return item.recipe;
         };
       })
-    }
+    // }
     this.setState({
       cocktailRecipe: tempRecipe,
       cocktailName: cocktailName,
+      cocktailImage: tempImage,
       display: true
     })
     recipe = "";
@@ -161,9 +156,9 @@ class App extends React.Component {
         <div className="container-fluid text-block">
           <span className="overlay-text maintxt2 alternate-font text-blue">WHAT WOULD YOU LIKE?</span>
           <br />
-       </div>
+        </div>
 
-     
+
         <div className="feature-wrapper bg-white pt-5 pb-5 mt-5 mt-lg-0">
           <div className="container">
             <div className="row">
@@ -217,28 +212,24 @@ class App extends React.Component {
         <div className="feature-wrapper bg-white pt-5 pb-5 mt-5 mt-lg-0">
           <div className="container">
             <div className="row">
-              <span>
-            <section>
-              <div className="col-sm-12 col-lg-12 text-center text-md-left text-uppercase mb-3 mb-md-0">
+              {/* <span> */}
+              <section>
+                <div className="col-sm-12 col-lg-9">
+                  <SearchByDrink
+                    searchCocktailByDrinkFunc={this.searchCocktailByDrink}
+                    key="3" />
+                </div>
 
-                <SearchByDrink
-                  searchCocktailByDrinkFunc={this.searchCocktailByDrink}
-                  key="3" />
-              </div>
-              <div className="row">
-              <div className="col-sm-1 col-lg-6 ">
-              <div className="col-sm-12 col-lg-6" align="center">
-                <SearchResults
-                  cocktailArray={this.state.cocktailByDrink}
-                  label="Click to see Cocktails"
-                  showRecipeFunc={this.showRecipe}
-                  key="4"
-                />
-              </div>
-              </div>
-              </div>
+                <div className="col-sm-12 col-lg-3">
+                  <SearchResults
+                    cocktailArray={this.state.cocktailByDrink}
+                    label="Click to see Cocktails"
+                    showRecipeFunc={this.showRecipe}
+                    key="4"
+                  />
+                </div>
               </section>
-              </span>
+              {/* </span> */}
             </div>
           </div>
         </div>
@@ -248,6 +239,7 @@ class App extends React.Component {
           <DisplayPopup
             cocktailName={this.state.cocktailName}
             recipe={this.state.cocktailRecipe}
+            image={this.state.cocktailImage}
             display={this.state.display}
             resetVariablesFunc={this.resetVariables}
             key="7"
@@ -256,7 +248,9 @@ class App extends React.Component {
         </div>
 
         <div className="container-fluid">
-          <img img className="img-responsive" src={photo2} width="1450" alt="" />
+          {/* <img img className="img-responsive" src={photo2} width="1450" height="100" alt="" /> */}
+
+          <img img className="img-responsive1" src={photo2} width="1450" alt=""/>
         </div>
       </Fragment>
     );
