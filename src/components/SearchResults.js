@@ -20,11 +20,9 @@ class SearchResults extends React.Component {
 
     render() {
         return (
-            // <section>
-            //     <div className="col-sm-12 col-lg-6"></div>
-            //     <div className="col-sm-12 col-lg-6"></div>
-
-                <div className="form-group">
+            
+            <div>
+                 {/* <div className="form-group">  */}
                     <label for="SearchResults">Search Results</label>
                     <select multiple className="form-control" id="SearchResults"
                         onChange={this.handleDropdownChange}>
@@ -33,7 +31,6 @@ class SearchResults extends React.Component {
                         })}
                     </select>
                 </div>
-            // </section>
         );
     }
 }

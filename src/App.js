@@ -14,13 +14,6 @@ import Footer from "./components/Footer";
 
 import './App.css';
 
-// import HideableText from "./components/HideableText";
-
-// import Hero from './components/Hero';
-// import { Navbar, Jumbotron, Button } from 'react-bootstrap';
-
-/*import logo from './logo.svg';*/
-
 const axios = require('axios');
 
 class App extends React.Component {
@@ -212,7 +205,6 @@ class App extends React.Component {
         <div className="feature-wrapper bg-white pt-5 pb-5 mt-5 mt-lg-0">
           <div className="container">
             <div className="row">
-              {/* <span> */}
               <section>
                 <div className="col-sm-12 col-lg-9">
                   <SearchByDrink
@@ -229,7 +221,6 @@ class App extends React.Component {
                   />
                 </div>
               </section>
-              {/* </span> */}
             </div>
           </div>
         </div>
