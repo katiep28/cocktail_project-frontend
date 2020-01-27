@@ -30,6 +30,7 @@ class DisplayPopup extends React.Component {
                     </div>
                 </Modal>
             </section>
+            
         );
     }
 }

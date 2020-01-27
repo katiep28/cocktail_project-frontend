@@ -156,7 +156,7 @@ class App extends React.Component {
           <div className="container">
             <div className="row">
 
-              <div className="col-sm-12 col-md-5 text-center text-md-left text-uppercase mb-3 mb-md-0">
+              <div className="col-sm-12 col-lg-6">
                 {/* <div className="row"> */}
                 <SearchCocktailByName
                   searchCocktailFunc={this.searchCocktailByName}
@@ -165,7 +165,8 @@ class App extends React.Component {
 
               </div>
 
-              <div className="col-sm-12 col-md-3 text-center text-md-left text-uppercase mb-3 mb-md-0">
+              {/* <div className="col-sm-12 col-lg-3 text-center text-md-left text-uppercase mb-3 mb-md-0"> */}
+              <div className="col-sm-12 col-lg-3">
 
                 <DropDown
                   cocktailArray={alcoholicCocktails}
@@ -176,7 +177,7 @@ class App extends React.Component {
 
               </div>
 
-              <div className="col-sm-12 col-md-3 text-center text-md-left text-uppercase mb-3 mb-md-0">
+              <div className="col-sm-12 col-lg-3">
 
                 <DropDown
                   cocktailArray={nonAlcoholicCocktails}
@@ -206,13 +207,13 @@ class App extends React.Component {
           <div className="container">
             <div className="row">
               <section>
-                <div className="col-sm-12 col-lg-9">
+                <div className="col-sm-12 col-lg-8">
                   <SearchByDrink
                     searchCocktailByDrinkFunc={this.searchCocktailByDrink}
                     key="3" />
                 </div>
 
-                <div className="col-sm-12 col-lg-3">
+                <div className="col-sm-12 col-lg-4">
                   <SearchResults
                     cocktailArray={this.state.cocktailByDrink}
                     label="Click to see Cocktails"
