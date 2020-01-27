@@ -8,10 +8,10 @@ header {
 .bg-company-red {
     background-color: rgb(82, 172, 202) !important;
 }
-
+/* 
 .container {
     max-width: 150%;
-}
+} */
 
 body {
     background: linear-gradient(70deg, #e6e6e6, #f7f7f7);
@@ -25,7 +25,7 @@ body {
     display: inline-block;
     width: 150%;
 }
-
+/* 
 @media (max-width: 768px) {
     .navbar-brand {
         height: 50px;
@@ -33,13 +33,13 @@ body {
     .navbar-toggle {
         margin-top: 25px;
     }
-}
+} */
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
     body {
         padding-top: 0px;
     }
-}
+} */
 
 code {
     background: #fff;
@@ -48,25 +48,26 @@ code {
     margin: 0 0.3rem;
 }
 
-
+/* Tippl Logo*/
 .navbar-brand {
-    left: 40%;
+    left: 50%;
     position: relative;
-    margin-top: auto;
+    /* margin-top: auto;
     margin-bottom: 4.5rem;
-    /* padding-bottom: 10px; */
+    padding-bottom: 10px;*/
     padding: 0;
     width: 50px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    display: inline-block;
+    /* display: inline-block; */
 }
 
 .navbar-collapse {
-    overflow: hidden;
+    /* overflow: hidden; */
+
 }
 
 .navbar-brand img {
-    width: 250%;
+    width: 200%;
     /* adjust the width as per your logo size*/
     position: relative!important;
 }

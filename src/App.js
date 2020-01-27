@@ -139,12 +139,12 @@ class App extends React.Component {
 
     return (
       <Fragment>
-        <div className="jumbotron">
+        {/* <div className="jumbotron"> */}
           <div className="container-bg-sm" >
             <Header />
           </div>
           <Footer />
-        </div>
+        {/* </div> */}
 
         <div className="container-fluid text-block">
           <span className="overlay-text maintxt2 alternate-font text-blue">WHAT WOULD YOU LIKE?</span>

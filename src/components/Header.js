@@ -16,7 +16,9 @@ class Header extends React.Component {
 
                     </a>
 
-                    <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" className="navbar-toggler"><span className="navbar-toggler-icon"></span></button>
+                    <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" className="navbar-toggler">
+                        <span className="navbar-toggler-icon"></span>
+                        </button>
 
                     <div id="navbarSupportedContent" className="collapse navbar-collapse">
                         <ul className="navbar-nav ml-auto">
@@ -27,10 +29,10 @@ class Header extends React.Component {
                     </div>
 
                     <div className="mb-5 flex-center">
-                        <div className="ins-ic">
+                        {/* <div className="ins-ic"> */}
                             <a href="https://www.instagram.com/tipplapp/" target="_blank">
                                 <i className="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-3x"> </i></a>
-                        </div>
+                        {/* </div> */}
                     </div>
                 </div>
                 {/* <Greet />  */}
