@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e6af970a80f388905c98114e9b081930",
+    "revision": "b3045a79d2b163eb7c3af0655eaef641",
     "url": "/cocktail_project-frontend/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/cocktail_project-frontend/static/css/2.c8b610bc.chunk.css"
   },
   {
-    "revision": "82f438323cbd14760c9b",
-    "url": "/cocktail_project-frontend/static/css/main.ae74fe99.chunk.css"
+    "revision": "7b4070d49df2390db62d",
+    "url": "/cocktail_project-frontend/static/css/main.dd4cf939.chunk.css"
   },
   {
     "revision": "974a31bdc85230724c26",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/cocktail_project-frontend/static/js/2.87840941.chunk.js.LICENSE"
   },
   {
-    "revision": "82f438323cbd14760c9b",
-    "url": "/cocktail_project-frontend/static/js/main.87dcf111.chunk.js"
+    "revision": "7b4070d49df2390db62d",
+    "url": "/cocktail_project-frontend/static/js/main.f4c92edb.chunk.js"
   },
   {
     "revision": "37145583ba0b5e5b2d45",
